@@ -10,25 +10,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MonumentsApp
+namespace MonumentsApp.Functions
 {
-    public partial class Form1 : MaterialForm
+    public partial class MountsQueue : MaterialForm
     {
-        public Form1()
+        public MountsQueue()
         {
             InitializeComponent();
             var skinManager = MaterialSkinManager.Instance;
             skinManager.AddFormToManage(this);
             skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            skinManager.ColorScheme = 
+            skinManager.ColorScheme =
                 new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-        }
-
-        private void MaterialFlatButton1_Click(object sender, EventArgs e)
-        {
-            string login = materialSingleLineTextField1.Text;
-            string password = materialSingleLineTextField2.Text;
-
         }
     }
 }
