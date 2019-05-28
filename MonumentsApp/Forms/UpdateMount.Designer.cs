@@ -231,6 +231,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(12, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(358, 225);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
@@ -275,6 +276,8 @@
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.richTextBox1);
             this.Name = "UpdateMount";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "UpdateMount";
             this.Load += new System.EventHandler(this.UpdateMount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

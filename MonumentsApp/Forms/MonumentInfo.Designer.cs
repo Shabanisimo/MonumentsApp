@@ -189,6 +189,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(14, 78);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 260);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
@@ -260,6 +261,8 @@
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MonumentInfo";
             this.Text = "MonumentInfo";
             this.Load += new System.EventHandler(this.MonumentInfo_Load);

@@ -53,7 +53,7 @@ namespace MonumentsApp.Functions
             newMonument.Year = materialSingleLineTextField5.Text;
             newMonument.Street = materialSingleLineTextField2.Text;
             newMonument.Info = richTextBox1.Text;
-            if (openFileDialog1.FileName != null)
+            if (openFileDialog1.FileName != "openFileDialog1")
             {
                 string fileName = openFileDialog1.FileName;
                 newMonument.Img = fileName;

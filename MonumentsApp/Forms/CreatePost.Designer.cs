@@ -283,6 +283,8 @@
             this.Controls.Add(this.materialSingleLineTextField2);
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.richTextBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CreatePost";
             this.Text = "CreatePost";
             this.Load += new System.EventHandler(this.CreatePost_Load);

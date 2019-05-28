@@ -137,6 +137,8 @@
             this.Controls.Add(this.materialSingleLineTextField2);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialSingleLineTextField1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Авторизация";
             this.ResumeLayout(false);

@@ -137,6 +137,8 @@
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.materialFlatButton2);
             this.Controls.Add(this.materialFlatButton1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Registration";
             this.Text = "Registration";
             this.ResumeLayout(false);
