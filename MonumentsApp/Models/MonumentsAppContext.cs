@@ -15,6 +15,5 @@ namespace MonumentsApp.Models
         public DbSet<City> Cities { get; set; }
         public DbSet<Country> Countries { get; set; }
 
-
     }
 }

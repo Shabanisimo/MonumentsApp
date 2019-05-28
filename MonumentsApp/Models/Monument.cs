@@ -9,5 +9,7 @@
         public string Street { get; set; }
         public string Year { get; set; }
         public string Info { get; set; }
-}
+        public string Img { get; set; }
+
+    }
 }

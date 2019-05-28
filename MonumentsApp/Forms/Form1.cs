@@ -1,13 +1,7 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
+using MonumentsApp.Functions;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MonumentsApp
@@ -28,7 +22,25 @@ namespace MonumentsApp
         {
             string login = materialSingleLineTextField1.Text;
             string password = materialSingleLineTextField2.Text;
+            var user = DataBaseFunctions.Auth(login, password);
+            if (user != null)
+            {
+                MainForm form = new MainForm(user);
+                form.Show();
+                this.Visible = false;
+            }
+            else
+            {
+              MessageBox.Show("Неправильный логин или пароль");
+            }
 
+        }
+
+        private void MaterialFlatButton2_Click(object sender, EventArgs e)
+        {
+            Registration form = new Registration();
+            form.Show();
+            this.Visible = false;
         }
     }
 }

@@ -124,6 +124,7 @@
             this.materialFlatButton2.TabIndex = 5;
             this.materialFlatButton2.Text = "Регистрация";
             this.materialFlatButton2.UseVisualStyleBackColor = true;
+            this.materialFlatButton2.Click += new System.EventHandler(this.MaterialFlatButton2_Click);
             // 
             // Form1
             // 

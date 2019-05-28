@@ -206,6 +206,7 @@
             this.materialFlatButton1.TabIndex = 12;
             this.materialFlatButton1.Text = "Закрыть";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.Click += new System.EventHandler(this.MaterialFlatButton1_Click);
             // 
             // materialFlatButton2
             // 
@@ -221,6 +222,7 @@
             this.materialFlatButton2.TabIndex = 13;
             this.materialFlatButton2.Text = "Удалить";
             this.materialFlatButton2.UseVisualStyleBackColor = true;
+            this.materialFlatButton2.Click += new System.EventHandler(this.MaterialFlatButton2_Click);
             // 
             // materialFlatButton3
             // 
@@ -236,6 +238,7 @@
             this.materialFlatButton3.TabIndex = 14;
             this.materialFlatButton3.Text = "обновить";
             this.materialFlatButton3.UseVisualStyleBackColor = true;
+            this.materialFlatButton3.Click += new System.EventHandler(this.MaterialFlatButton3_Click);
             // 
             // MonumentInfo
             // 
@@ -259,6 +262,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Name = "MonumentInfo";
             this.Text = "MonumentInfo";
+            this.Load += new System.EventHandler(this.MonumentInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
